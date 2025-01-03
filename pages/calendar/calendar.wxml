@@ -1,0 +1,5 @@
+<!--pages/calendar/calendar.wxml-->
+<calendar defaultDate="2024/6/25" spot="{{spot}}" bind:dateChange="dateChange"></calendar>
+<view class="date-string">当前选中的日期是：{{dateString}}</view>
+<view class="date-string">恭喜你已经成功连续打卡{{count}}天！</view>
+<image src="../img/赞.png" mode="aspectFit"></image>

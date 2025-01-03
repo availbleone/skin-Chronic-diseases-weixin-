@@ -1,0 +1,32 @@
+/* pages/load/load.wxss */
+.loadType {
+    margin-top: 800rpx;
+}
+.load1 {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.load2 {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  top: 500rpx;
+  width: 250rpx;
+}
+.container1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button {
+    margin-top: 8rpx;
+      width: 80%;
+      margin-top: 20rpx;
+      background-color: beige;
+      color: rgb(2, 2, 1);
+      border-radius: 98rpx; 
+}

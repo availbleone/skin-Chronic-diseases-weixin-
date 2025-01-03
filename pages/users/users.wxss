@@ -1,0 +1,79 @@
+/* pages/users/users.wxss */
+.container{
+  background-color: rgb(232, 236, 236);
+  height: 10rpx;
+  padding: 70rpx;
+}
+.top{
+  background-color: #1fda38f1;
+  
+}
+.load{ 
+  width: 100%;
+  height: 400rpx;
+  /*设置图片和文字垂直居中对齐*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.load image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+.load text{
+  color:white;
+}
+.exit{
+  width: 3px;
+  height: 40px;
+  margin-top: 5px;
+}
+.setting image{
+  margin-left:10px; 
+  margin-right: 10rpx;
+  width: 36rpx; 
+  height:36rpx
+}
+.usernummber{
+background-color: rgb(255, 255, 255);
+margin: 15rpx 25rpx;
+border-radius: 15rpx 25rpx;
+height: 200rpx;
+display: flex;
+align-items: center;
+}
+.usernummber image{
+  margin-left: 1px; 
+  width:144rpx; 
+  height:144rpx
+}
+.usernummber button
+{
+  background-color: rgb(255, 255, 255);
+  width: 50rpx;
+  margin-right: 0rpx;
+}
+page{
+  background-color: #F1F1F1;
+}
+.setting{
+background-color: rgb(255, 255, 255);
+margin: 15rpx 25rpx;
+height: 100rpx;
+font-size: 30rpx;
+display: flex;
+align-items: center;
+border-radius: 25rpx;
+}
+.buttons button{
+  font-size: 30rpx;
+  width: 330rpx;
+  border-radius: 50rpx;
+  background-color: rgb(235, 100, 100);
+}
+.buttons{
+  margin-top: 100rpx;
+}

@@ -1,0 +1,14 @@
+<!--pages/suggestion/suggertion.wxml-->
+<view>
+  <!-- <navigator class="fankui" url="/pages/news/news">
+  <text class="test1">我要反馈</text>
+  </navigator> -->
+  <button class="hover" bindtap="fankui">我要反馈</button>
+  <view>
+    <image class="p1" src="/pages/img/1.jpg" mode="aspectFill"></image>
+  </view>
+  <view class="test2">
+    <test class="test">暂无反馈记录</test>
+  </view>
+</view>
+

@@ -1,0 +1,55 @@
+/* pages/detect/detect.wxss */
+.container{
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+}
+.v1{
+	width: 100%;
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	margin: 10rpx;
+	top: -160rpx;
+}
+.v2{
+	width: 100%;
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	align-items: center;
+	top: -160rpx;
+}
+.t1{
+	display: flex;
+	position: relative;
+	flex: 4;
+}
+.t3{
+	display: flex;
+	font-size: 7pt;
+}
+.generate{
+	display: flex;
+	position: relative;
+	height: 40rpx;
+	flex: 1;
+	top: -4rpx;
+	align-items: center;
+	justify-content: center;
+}
+.index{
+	display: flex;
+	position: relative;
+	flex: 9;
+}
+input{
+	display: flex;
+	flex: 1;
+	border: 5rpx groove rgb(235, 167, 128);
+	border-radius: 10rpx;
+}
+button{
+	bottom: 70rpx;
+}

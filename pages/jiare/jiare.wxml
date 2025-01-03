@@ -1,0 +1,79 @@
+<!--pages/jiare/jiare.wxml-->
+<!--  -->
+<view>
+  <text class="subtitle">各类皮肤疾病于总皮肤疾病占比</text>
+</view>
+<view class="neironview">
+	<canvas canvas-id="canvas" style="width:{{canvasW}}px;height:{{canvasH}}px;margin:auto;"></canvas>
+</view>
+
+<view class="neironview">
+  <view>
+    <image src="/pages/img/shugan.png"   style=" margin-left: 1px;  width: 30rpx; height:30rpx"></image>
+    <text>健康监测管理</text>
+  </view>
+  <view class="link">
+    <button style="width: 175rpx;" value="打卡" bindtap="button_detect">健康监测</button>
+    <button style="display: {{link}};" style="width: 225rpx;"  bindtap="button_slow">慢病管理</button>
+    <button style="width: 200rpx;" bindtap="button_recognize">体质辨识</button>
+  </view>
+</view>
+<!-- 功能模块 -->
+<view class="neironview">
+  <view>
+    <image src="/pages/img/shugan.png"   style=" margin-left: 1px;  width: 30rpx; height:30rpx"></image>
+    <text>运动管理</text>
+  </view>
+  <view class="link">
+    <button style="display: {{link}};" style="width: 225rpx;"  bindtap="button_link_2">
+      <lable wx:if="{{link}}">打卡记录</lable>
+      <lable wx:if="{{link_guanbi}}">关闭 </lable>
+    </button>
+    <button style="width: 200rpx;" bindtap="button_plan">个性化训练计划</button>
+   
+  </view>
+</view>
+<!-- 膳食管理 -->
+<view class="neironview">
+  <view>
+    <image src="/pages/img/shugan.png"   style=" margin-left: 1px;  width: 30rpx; height:30rpx"></image>
+    <text>膳食管理</text>
+  </view>
+  <view class="yueJingQk">
+    <button style="width: 250rpx;" value="今日推荐食谱" bindtap="button_yiChang">今日推荐食谱</button>
+    <button style="width: 250rpx;" value="个人饮食习惯" bindtap="button_zhengChang">个人饮食习惯记录</button>
+  </view>
+</view>
+<!-- 食谱 -->
+<view class="neironview" wx:if="{{none}}">
+	<view>
+<image src="/pages/img/shugan.png"   style=" margin-left: 1px;  width: 30rpx; height:30rpx"></image>
+<text>推荐食谱</text>
+</view>
+<view class="ronqi">
+<button class="ronqi1" style="width: 175rpx;"  value="桃仁粥" bindtap="button02" id="02">桃仁粥</button>
+<button class="ronqi1" style="width: 200rpx;" value="桂枝杜仲粥" bindtap="button03" id="03">桂枝杜仲粥</button>
+<button class="ronqi1" style="width: 200rpx;" value="当归炖羊肉" bindtap="button04" id="04">当归炖羊肉</button>
+<button class="ronqi1"  style="width: 200rpx;" value="百合绿豆汤" bindtap="button05" id="05">百合绿豆汤</button>
+<button class="ronqi1"  style="width: 200rpx; " value="芹菜豆腐" bindtap="button06" id="06">芹菜豆腐</button>
+<button class="ronqi1"  style="width: 200rpx;" value="海带炖排骨" bindtap="button07" id="07">海带炖排骨</button>
+<button class="ronqi1"  style="width: 200rpx;" value="蕹菜猪肉卷" bindtap="button08" id="08">蕹菜猪肉卷</button>
+</view>
+</view>
+<!-- 日记 -->
+<view wx:if="{{xianshi}}" class="neironview">
+	<view>
+<image src="/pages/img/shugan.png"   style=" margin-left: 1px;  width: 30rpx; height:30rpx"></image>
+<text>记录</text>
+</view>
+<textarea name="txt" id="txt" cols="500" rows="500" style="height: 200rpx;">
+</textarea>
+<button style="width: 250rpx;" value="生成个人饮食健康评价" bindtap="button_generate">生成个人饮食健康评价</button>
+</view>
+
+
+
+
+
+
+

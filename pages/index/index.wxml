@@ -1,0 +1,15 @@
+<!--pages/index/index.wxml-->
+<view class="common-page">
+    <view class='tffzh'>
+      <text>皮肤健康监测小程序</text>
+    </view>
+</view>
+<view>
+<image style="width: 100%" mode="widthFix" src="../img/保持健康.png"></image>
+<button class="btn_login"
+    type="primary" bindtap="loginbnt">登入系统
+</button>
+</view>
+ 
+
+

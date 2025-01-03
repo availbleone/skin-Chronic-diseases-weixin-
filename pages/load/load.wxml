@@ -1,0 +1,9 @@
+<!--pages/load/load.wxml-->
+<view class="container1">
+<image class="load1" mode="widthFix" src="../img/保持健康.png"></image>
+<image class="load2" mode="widthFix" src="../img/健康体检.png"></image>
+<view class="loadType">
+    <button  bindtap="loadByAccount">账号密码登录</button>
+    <button bindtap="sign">注册账号</button>
+</view>
+</view>

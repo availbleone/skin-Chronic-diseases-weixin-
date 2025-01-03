@@ -1,0 +1,21 @@
+/* pages/news/news.wxss */
+.hover{
+  margin-top: 100rpx;
+  background-color:  rgb(245, 239, 165);
+  font-size: 40rpx;
+}
+.text1{
+  background-color: beige;
+  font-size: 40rpx;
+  margin-left: 20rpx;
+}
+.texts{
+  height: 200rpx;
+  width:95%;
+  margin:20rpx;
+}
+.picture{
+  width: 95%;
+  height: 500rpx;
+  margin-left: 20rpx;
+}

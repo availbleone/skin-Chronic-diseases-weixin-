@@ -1,0 +1,44 @@
+/* pages/register/register.wxss */
+.container{
+  background: -webkit-linear-gradient(top,rgb(245, 234, 183),white);
+  height: 10rpx;
+  padding: 70rpx;
+}
+.top{
+  border-radius: 50%;
+  overflow: hidden;
+  width:200rpx;
+  height: 200rpx;
+  position: relative;
+  background: rgb(236, 228, 189);
+  margin: 0 auto;
+  }
+ .phone{
+   border-bottom: solid 1rpx #e9e5e5;
+   margin-top: 50rpx;
+ }
+ .registerview{
+   margin-top: 50rpx;
+ }
+ .buttons button{
+  margin-top:50rpx;
+  border-radius: 50rpx;
+  background-color: rgb(233, 215, 158);
+  align-items: center;
+  text-align: center;
+  width: max-content;
+ }
+ .nameImage{
+  margin-left: 1px; 
+ width: 36rpx; 
+ height:36rpx
+ }
+ .id1{
+    font-family: cursive;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+ }
+ input{
+  background: -webkit-linear-gradient(top,rgb(230, 208, 168),white);
+ }

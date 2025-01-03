@@ -1,0 +1,9 @@
+<!--pages/fan/index.wxml-->
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modalDlg" wx:if="{{showModal}}">
+<input class="input" type="text" placeholder="请对进行故障描述" placeholder-style="color：block" bindinput="listenerPhoneInput" />
+ <text>请问在使用本产品过程中有什么问题吗~</text>
+ <button bindtap="go">点我关闭并提交哦</button>
+</view>
+<button bindtap="submit">报个故障</button>
+<button bindtap="goto">用户调研</button>

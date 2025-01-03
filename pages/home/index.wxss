@@ -1,0 +1,12 @@
+/* pages/index.wxss */
+button{
+    width: 90%;
+    height: 120rpx;
+    margin-top: 55rpx;
+    background-color: rgb(240, 161, 214);
+    color: white;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}

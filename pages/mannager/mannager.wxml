@@ -1,0 +1,16 @@
+<!--pages/mannager/mannager.wxml-->
+<view class="container">
+设置管理
+</view>
+<view class="neironview">
+<button style="width: 270rpx;margin-left: 0rpx;" bindtap="gotopage1">帮助中心</button>
+</view>
+<view class="neironview">
+<button style="width: 270rpx;margin-left: 0rpx;" bindtap="gotopage2">投诉与建议</button>
+</view>
+<view class="neironview">
+<button style="width: 270rpx;margin-left: 0rpx;" bindtap="gotopage3">联系后台</button>
+</view>
+<view class="neironview">
+<button style="width: 270rpx;margin-left: 0rpx;" bindtap="bindClear">清除缓存</button>
+</view>

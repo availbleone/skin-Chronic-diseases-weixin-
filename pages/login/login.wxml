@@ -1,0 +1,40 @@
+<!--pages/login/login.wxml-->
+<!-- 实行全局包裹的 状态 -->
+<view class="container">
+登录
+</view>
+<view class="login-icon"> 
+ <image mode="widthFix" class="login-img" src="/pages/img/登录日志.png"></image> 
+ </view> 
+<view class="register">
+
+  <view class="phone">
+   <image class="nameImage" src="/pages/img/phone.png"></image> 
+ <text>账号</text>
+  <input type="text" placeholder="请输入账号" id="idtxt"  value="{{phone}}" bindinput="mobileInput" />
+  </view>
+
+  <view class="phone">
+    <image class="nameImage" src="/pages/img/useryuan.png"></image> 
+  <text>密码</text>
+  <input type="password" placeholder="请输入密码" id="codetxt"value="{{passWord}}" bindinput="passwordInput" />
+  </view>
+
+</view>
+<view  class="tids">
+<button bindtap="gotopage1" style="width: 220rpx; font-size: 21rpx;margin-right: 0%; background-color: rgb(255, 255, 255);">新用户注册</button>
+</view>
+<!-- 登录 -->
+<view>
+<button style="background-color: rgb(212, 183, 102); width: 250rpx;border-radius: 50rpx; margin-top: 80rpx;" disabled='{{btn_disabled}}' bindtap="login" >登  录</button>
+</view>
+<!-- 底部图标 -->
+<view class="iconview" style="height: auto;">
+<!--相关协议-->
+<checkbox-group bindchange="bindAgreeChange">
+           <view class="agree__text">
+              <checkbox class="agree__checkbox" id="weuiAgree" value="agree" checked="{{}}" style="zoom: 75%;"/>
+              <text style="font-size: 13px; padding: 5rpx;" bindtap="gotomianze"> 阅读并同意《相关条款》</text>        
+           </view>
+   </checkbox-group>
+</view>

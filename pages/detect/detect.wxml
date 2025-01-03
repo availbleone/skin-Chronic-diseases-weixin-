@@ -1,0 +1,77 @@
+<view class="container">
+	<view class="title">
+		<image mode="widthFix" src="../img/健康记录.png"></image>
+		<text class="maincontent">健康检测</text>
+		<image style="width: 100rpx; position: relative; left: 324rpx; top: -349rpx; border: 2rpx solid rgb(230, 220, 88); border-radius: 5rpx" mode="widthFix" bindtap="bluetooth" src="../img/蓝牙.png"></image>
+	</view>
+	<view class="content">
+		<view class="height">
+			<text>身高(cm):</text>
+			<text>{{height}}</text>
+			<button type="default" class="btn" style="width: 193rpx; height: 68rpx; display: block; box-sizing: border-box; left: 270rpx; top: -50rpx" bindtap="btn1">
+				<text class="t1" style="position: relative; left: -15rpx; top: -7rpx">开始监测</text>
+			</button>
+		</view>
+		<view class="weight">
+			<text>体重(kg):</text>
+			<text>{{weight}}</text>
+			<button type="default" class="btn" style="width: 193rpx; height: 68rpx; display: block; box-sizing: border-box; left: 270rpx; top: -50rpx" bindtap="btn2">
+				<text class="t1" style="position: relative; left: -15rpx; top: -7rpx">开始监测</text>
+			</button></view>
+			<view class="temperature">
+		<text>体温(℃):</text>
+		<text>{{temperature}}</text>
+			<button type="default" class="btn" style="width: 193rpx; height: 68rpx; display: block; box-sizing: border-box; left: 270rpx; top: -50rpx" bindtap="btn3">
+				<text class="t1" style="position: relative; left: -15rpx; top: -7rpx">开始监测</text>
+			</button></view>
+			<view class="temperature">
+		<text>皮肤湿度(%):</text>
+		<text>{{wet}}</text>
+			<button type="default" class="btn" style="width: 193rpx; height: 68rpx; display: block; box-sizing: border-box; left: 270rpx; top: -50rpx" bindtap="btn9">
+				<text class="t1" style="position: relative; left: -15rpx; top: -7rpx">开始监测</text>
+			</button></view>
+			<view class="temperature">
+		<text>皮脂分泌量(µg/cm²/h):</text>
+		<text>{{fenmi}}</text>
+			<button type="default" class="btn" style="width: 193rpx; height: 68rpx; display: block; box-sizing: border-box; left: 270rpx; top: -50rpx" bindtap="btn10">
+				<text class="t1" style="position: relative; left: -15rpx; top: -7rpx">开始监测</text>
+			</button></view>
+		<view class="temperature">
+		<text>角质层厚度(μm):</text>
+		<text>{{thick}}</text>
+			<button type="default" class="btn" style="width: 193rpx; height: 68rpx; display: block; box-sizing: border-box; left: 270rpx; top: -50rpx" bindtap="btn11">
+				<text class="t1" style="position: relative; left: -15rpx; top: -7rpx">开始监测</text>
+			</button></view>
+		<view class="pressure">
+		<text>血压(mmHg):</text>
+		<text>{{pressure}}</text>
+			<button type="default" class="btn" style="width: 193rpx; height: 68rpx; display: block; box-sizing: border-box; left: 270rpx; top: -50rpx" bindtap="btn4">
+				<text class="t1" style="position: relative; left: -15rpx; top: -7rpx">开始监测</text>
+			</button></view>
+		<view class="sugar">
+		<text>血糖(mmol/L):</text>
+		<text>{{sugar}}</text>
+			<button type="default" class="btn" style="width: 193rpx; height: 68rpx; display: block; box-sizing: border-box; left: 270rpx; top: -50rpx" bindtap="btn5">
+				<text class="t1" style="position: relative; left: -15rpx; top: -7rpx">开始监测</text>
+			</button></view>
+		<view class="rate">
+		<text>心率(次每分钟):</text>
+		<text>{{rate}}</text>
+			<button type="default" class="btn" style="width: 193rpx; height: 68rpx; display: block; box-sizing: border-box; left: 270rpx; top: -50rpx" bindtap="btn6">
+				<text class="t1" style="position: relative; left: -15rpx; top: -7rpx">开始监测</text>
+			</button></view>
+		<view class="vision">
+		<text>视力:</text>
+		<text>{{vision}}</text>
+			<button type="default" class="btn" style="width: 193rpx; height: 68rpx; display: block; box-sizing: border-box; left: 270rpx; top: -50rpx" bindtap="btn7">
+				<text class="t1" style="position: relative; left: -15rpx; top: -7rpx">开始监测</text>
+			</button></view>
+		<view class="capacity">
+		<text>肺活量(ml):</text>
+		<text>{{capacity}}</text>
+			<button type="default" class="btn" style="width: 193rpx; height: 68rpx; display: block; box-sizing: border-box; left: 270rpx; top: -50rpx" bindtap="btn8">
+				<text class="t1" style="position: relative; left: -15rpx; top: -7rpx">开始监测</text>
+			</button></view>
+			<button type="primary" bind:tap="submit">上传数据</button>
+	</view>
+</view>

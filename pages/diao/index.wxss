@@ -1,0 +1,10 @@
+/* pages/diao/index.wxss */
+button{
+    background-color: rgb(240, 161, 214);
+    color: white;
+}
+.input{
+    height: 300rpx;
+    width: 90%;
+    text-align: center;
+}

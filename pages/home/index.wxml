@@ -1,0 +1,6 @@
+<!--pages/index.wxml-->
+
+<button class="button1" bindtap="goto">产品反馈</button>
+<button open-type="contact" class="button1">在线服务</button>
+<button  class="button1">热线服务      
+100-000-000</button>

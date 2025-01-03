@@ -1,0 +1,86 @@
+.container{
+	width: 100%;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	background: rgb(224, 222, 184);
+	height: auto;
+}
+.maincontent{
+	display: flex;
+	position: relative;
+	flex-direction: column;
+}
+.questionaire{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+ flex-wrap: wrap;margin: 20rpx;
+}
+.title{
+	width: 100%;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+	top: -200rpx;
+	background: -webkit-linear-gradient(top,rgb(189, 122, 8),#e4bf8c,rgb(224, 222, 186));
+}
+#rt{
+	text-decoration:underline;
+	font-style:italic;
+	font-weight: bold;
+	font-size: large;
+}
+#qt{
+display: flex;
+flex: 1;
+font-size: large;
+font-weight: bold;
+}
+#ri{
+	width: 100rpx;
+}
+#qi{
+	width: 100rpx;
+}
+.basicinfo{
+	width: 100%;
+	flex-wrap: wrap;
+	height: auto;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+}
+radio .wx-radio-input {
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+}
+radio .wx-radio-input.wx-radio-input-checked {
+   /* 背景颜色 */
+  background-color: #fff!important; 
+  /* 边框颜色 */
+  border-color: #419dea!important;
+}
+ 
+/* 选中后的实心样式*/
+radio .wx-radio-input.wx-radio-input-checked::before {
+ /* 将对号去掉 */
+ content: ''; 
+ /*实心圆圈的大小*/
+ width: 18rpx;
+ height: 18rpx;
+ /*将圆角设置成50%才是一个圆*/
+ border-radius: 50%;
+ /*圆圈颜色*/
+ background-color: #419dea;
+}
+.bottom{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+	margin-bottom: 20rpx;
+}

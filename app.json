@@ -1,0 +1,69 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/jiare/jiare", 
+    "pages/login/login",
+    "pages/users/users",
+   "pages/information/information",
+    "pages/mannager/mannager",
+    "pages/register/register",
+    "pages/resetcode/resetcode",
+    "pages/home/index",
+    "pages/fan/index",
+    "pages/diao/index",
+    "pages/suggestion/suggertion",
+     "pages/news/news",
+    "pages/help/help",
+    "pages/mianze/mianze",
+    "pages/load/load",
+    "pages/calendar/calendar",
+    "pages/document/document",
+    "pages/lesson/lesson",
+    "pages/plan/plan",
+    "pages/detect/detect",
+    "pages/slow/slow",
+    "pages/recognize/recognize",
+    "pages/archive/archive",
+    "pages/equipment/enquipment"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f08080",
+    "navigationBarTitleText": "皮肤健康监测系统",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "cornsilk",
+    "selectedColor": "#4D4D4D",
+    "borderStyle": "black",
+    "backgroundColor": "cornsilk",
+    "list": [
+      {
+        "selectedIconPath": "pages/img/firstview.png",
+        "iconPath": "pages/img/firstview1.png",
+        "pagePath": "pages/jiare/jiare",
+        "text": "首 页"
+      },
+      {
+        "selectedIconPath": "pages/img/中医百科1.png",
+        "iconPath": "pages/img/中医百科2.png",
+        "pagePath": "pages/document/document",
+        "text": "中医百科"
+      },
+      {
+        "selectedIconPath": "pages/img/大讲堂1.png",
+        "iconPath": "pages/img/大讲堂2.png",
+        "pagePath": "pages/lesson/lesson",
+        "text": "健康讲堂"
+      },
+      {
+        "selectedIconPath": "pages/img/my1.png",
+        "iconPath": "pages/img/my2.png",
+        "pagePath": "pages/users/users",
+        "text": "个人档案"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

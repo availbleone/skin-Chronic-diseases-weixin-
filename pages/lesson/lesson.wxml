@@ -1,0 +1,54 @@
+<!--pages/lesson/lesson.wxml-->
+<view class="container">
+<text id="title">健康讲堂</text>
+<view class="knowledge">
+  <view class="first">
+    <text id="daily">每日健康小知识</text>
+    <image id="tiper" mode="widthFix" src="../img/小贴士.png"></image>
+  </view>
+  <text id="onetip">养成良好的生活习惯首先良好的睡眠习惯和充足的睡眠时间，对维持皮肤的更新和功能非常重要。其次多吃新鲜的蔬菜和水果可以补充人体所需的各种维生素及微量元素。经常进行体育锻炼可以增加皮肤对外界环境的适应能力哦。</text>
+</view>
+<view class="content">
+  <text id="subtitle">健康讲堂</text>
+  <view class="videolist">
+    <view class="video">
+      <text>专家解析皮肤病相关治疗</text>
+      <video src="cloud://cloud1-1g2md9bx4d7e66a7.636c-cloud1-1g2md9bx4d7e66a7-1318887319/books/1.mp4" id="myVideo1" autoplay="true" enable-danmu danmu-btn danmu-list="{{danmuList}}" controls></video>
+      <view class="danmu">
+         <input class="input_danmu" type="text" bindblur="bindInputBlur1"/>
+        <button type="primary" bindtap="bindSendDanmu1" size="mini">发送弹幕</button>
+      </view>
+      <text>这是一个关于牛皮癣相关治疗的视频</text>
+    </view>
+    <view class="video">
+      <text>专家解析皮肤病相关治疗</text>
+      <video src="cloud://cloud1-1g2md9bx4d7e66a7.636c-cloud1-1g2md9bx4d7e66a7-1318887319/books/1.mp4" id="myVideo2" enable-danmu danmu-btn danmu-list="{{danmuList}}" controls></video>
+      <view class="danmu">
+         <input class="input_danmu" type="text" bindblur="bindInputBlur2"/>
+        <button type="primary" bindtap="bindSendDanmu2" size="mini">发送弹幕</button>
+      </view>
+      <text>简介</text>
+    </view>
+    <view class="video">
+      <text>专家解析皮肤病相关治疗</text>
+      <video src="cloud://cloud1-1g2md9bx4d7e66a7.636c-cloud1-1g2md9bx4d7e66a7-1318887319/books/1.mp4" id="myVideo3" enable-danmu danmu-btn danmu-list="{{danmuList}}" controls></video>
+      <view class="danmu">
+         <input class="input_danmu" type="text" bindblur="bindInputBlur3"/>
+        <button type="primary" bindtap="bindSendDanmu3" size="mini">发送弹幕</button>
+      </view>
+      <text>简介</text>
+    </view>
+    <view class="video">
+      <text>专家解析皮肤病相关治疗</text>
+      <video src="cloud://cloud1-1g2md9bx4d7e66a7.636c-cloud1-1g2md9bx4d7e66a7-1318887319/books/1.mp4" id="myVideo4" enable-danmu danmu-btn danmu-list="{{danmuList}}" controls></video>
+      <view class="danmu">
+         <input class="input_danmu" type="text" bindblur="bindInputBlur4"/>
+        <button type="primary" bindtap="bindSendDanmu4" size="mini">发送弹幕</button>
+      </view>
+      <text>简介</text>
+    </view>
+    <text>亲，在往下找就没有了哦٩(๑˃̵ᴗ˂̵๑)۶</text>
+   </view>
+</view>
+</view>
+

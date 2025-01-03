@@ -1,0 +1,54 @@
+/* pages/equipment/enquipment.wxss */
+.container{
+  background-color: #ebd798;
+  height: 10rpx;
+  padding: 70rpx;
+}
+.buttons button{
+  margin-top:20rpx;
+  border-radius: 50rpx;
+  background-color: #eee4c9;
+  align-items: center;
+  text-align: center;
+  width: max-content;
+  font-size: 30rpx;
+}
+
+.devices_summary {
+  margin-top: 30px;
+  padding: 10px;
+  font-size: 16px;
+}
+.device_list {
+  height: 300px;
+  margin: 50px 5px;
+  margin-top: 0;
+  border: 2px solid #face7c;
+  border-radius: 7px;
+  width: auto;
+}
+.device_item {
+  border-bottom: 1px solid #EEE;
+  padding: 10px;
+  color: #666;
+}
+.device_item_hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+.connected_info {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #F0F0F0;
+  padding: 10px;
+  padding-bottom: 20px;
+  margin-bottom: env(safe-area-inset-bottom);
+  font-size: 14px;
+  min-height: 100px;
+  box-shadow: 0px 0px 3px 0px;
+}
+.connected_info .operation {
+  position: absolute;
+  display: inline-block;
+  right: 30px;
+}

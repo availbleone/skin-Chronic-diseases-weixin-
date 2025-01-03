@@ -1,0 +1,59 @@
+/* pages/login/login.wxss */
+.container{
+  background: -webkit-linear-gradient(top,rgb(235, 215, 128),white);
+  height: 10rpx;
+  padding: 70rpx;
+}
+.login-icon{ 
+  margin-top: 90rpx;
+ flex: none; 
+ width: 100%;
+ height: auto;
+ text-align: center;
+} 
+ 
+.login-img{ 
+ margin: 0 auto;  
+ display: flex;
+ justify-content: center;
+ overflow: hidden;
+ width: 250rpx;
+ border-radius: 50%;
+} 
+ 
+/*表单内容*/
+.login-from { 
+ margin-top: 20px; 
+ flex: auto; 
+ height:100%; 
+} 
+.phone{
+  border-bottom: solid 1rpx #e9e5e5;
+  margin-top: 50rpx;
+}
+.registerview{
+  margin-top: 50rpx;
+}
+.nameImage{
+  margin-left: 1px; 
+ width: 36rpx; 
+ height:36rpx
+ }
+.iconview{
+  height: 5rpx;
+  margin-top: 70rpx;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+ .iconview image {
+  width: 62rpx; 
+  height:62rpx;
+  margin:50rpx
+ }
+.agree__tex{
+  position: fixed;
+}
+input{
+  background: -webkit-linear-gradient(top,rgb(236, 235, 129),white);
+}

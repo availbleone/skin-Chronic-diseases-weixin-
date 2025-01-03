@@ -1,0 +1,15 @@
+<!--pages/news/news.wxml-->
+<view>
+  <text class="text1">反馈内容</text>
+  <textarea placeholder='请简要描述您的问题和意见，以便我们提供更好的帮助,或者您也可以选择拨打我们的服务热线哦'  class='texts' auto-focus='true' bindblur='changeContext'></textarea>
+</view>
+<view>
+  <button class="text1" bindtap="bindViewTap" type="submit">上传图片</button>
+  <image class="picture" src="{{avatarUrl}}" mode="aspectFill"></image>
+</view>
+<view> 
+  <button class="hover">提交</button>
+</view>
+
+
+

@@ -1,0 +1,39 @@
+<!--pages/mianze/mianze.wxml-->
+<!--pages/disclaimers/disclaimers.wxml  免责声明页面-->
+<view class="zt">
+	<view class="bt">《相关条款》</view>
+	<view class="nr">
+		A:所展示的信息为所有者自行提供，内容真实性、准确性、合法性由网站所有者负责。不承担任何保责任。所展示的担任何保证责任;
+	</view>
+    <view class="nr">
+		B:所展示的司不承担任何保证责任;
+	</view>
+    <view class="nr">
+		D:用户应符合条件:
+	</view>
+  <view class="nr">
+		1.用户应为注册用户，且仅限于自然人；
+	</view>
+  <view class="nr">
+		2.用户使用小程序时其账号处于已登录状态；
+	</view>
+  <view class="nr">
+		3.用户点击本协议第三条第（二）款定义的纳入保障计划范围的网站后，自相关网站经营者处购买商品或者接受服务（即发生实质交易）并遭受了直接经济损失；
+	</view>
+  <view class="nr">
+		4.用户按照本条第（六）款提交清晰且足以辨识的材料
+	</view>
+  <view class="nr">
+		1. 用户不能提供证据或证据不足的；
+	</view>
+  <view class="nr">
+	2.按照一般理性消费者的判断标准，用户对来自网站经营者的商品或服务风险的判断存在故意、重大过失而导致经济损失的；
+	</view>
+  <view class="nr">
+		3.用户有损害商誉、扰乱正常经营秩序言行的；
+	</view>
+  <view class="nr">
+		4. 对用户的保障结束后，用户又追加保障申请的；
+	</view>
+	<button class="btn1" bindtap="gotopage1">我已阅读</button>
+</view>

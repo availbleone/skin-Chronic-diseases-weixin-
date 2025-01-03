@@ -1,0 +1,110 @@
+<!--pages/slow/slow.wxml-->
+<view class="container">
+	<view class="title" style="position: relative; left: 0rpx; top: -104rpx;flex-direction: column;align-items: center;">
+		<text style="color: beige;font-size: 15pt;font-weight: bold;">慢病管理</text>
+		<view style="display: flex;width: 100%;position: relative;justify-content: center;">
+			<image mode="widthFix" style="width: 135rpx;transform: rotate(45deg);" src="../img/长箭头.png"></image>
+			<image mode="widthFix" style="width: 135rpx;" src="../img/长箭头.png"></image>
+			<image mode="widthFix" style="width: 135rpx;" src="../img/长箭头.png"></image>
+			<image mode="widthFix" style="width: 135rpx;transform: rotate(-45deg);" src="../img/长箭头.png"></image>
+		</view>
+	</view>
+	<view class="select">
+		<button class="btn1" bindtap="btn1" style="width: 150rpx;"><label>趋势监测及风险预测</label></button>
+		<button class="btn2" bindtap="btn2" style="width: auto;display: flex;position: relative;align-items: center;height: 150rpx;"><label>药物管理</label></button>
+		<button class="btn3" bindtap="btn3" style="width: auto;display: flex;position: relative;align-items: center;height: 150rpx;"><label>病情记录</label></button>
+		<button class="btn4" bindtap="btn4" style="width: auto;display: flex;position: relative;align-items: center;height: 150rpx;"><label>健康咨询</label></button>
+	</view>
+	<view wx:if="{{trend}}" class="trend">
+		<text style="text-align: center;font-weight: bold;">数据趋势监测</text>
+		<ec-canvas style="width: 100%; height: 500px;" force-use-old-canvas="{{true}}" id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+	</view>
+	<view class="predict" wx:if="{{trend}}">
+		<text style="text-align: center;font-weight: bold;">慢病风险预测</text>
+		<text>根据你近期的身体状况监测数据趋势及多个因素综合来看，你的身体目前十分健康，暂无发病风险，请继续保持哦</text>
+	</view>
+	<view wx:if="{{medicine}}" class="medicine">
+		<text style="text-align: center;font-weight: bold;">药物管理</text>
+		<view>
+			<view class="table">
+				<!-- 表头 -->
+				<view class="table-header">
+					<text class="header-item">药物名称</text>
+					<text class="header-item">描述</text>
+					<text class="header-item">剂量</text>
+					<text class="header-item">用法</text>
+					<text class="header-item">提醒时间</text>
+				</view>
+
+				<!-- 表格内容 -->
+				<block wx:for="{{ medicines }}" wx:key="id">
+					<view class="table-row">
+						<text class="table-item">{{ item.name }}</text>
+						<text class="table-item">{{ item.description }}</text>
+						<text class="table-item">{{ item.dosage }}</text>
+						<text class="table-item">{{ item.usage }}</text>
+						<text class="table-item">{{ item.remindertime }}</text>
+					</view>
+				</block>
+			</view>
+			<button bindtap="alerm">提醒我</button>
+		</view>
+	</view>
+	<view wx:if="{{record}}" class="record">
+		<text style="text-align: center;font-weight: bold;">病情记录</text>
+		<form style="width: 95%;" bindsubmit="submitRecord">
+			<view class="form-item">
+				<label>发作时间</label>
+				<input type="date" name="flareUpDate" />
+			</view>
+			<view class="form-item">
+				<label>症状部位</label>
+				<input name="symptomLocation" placeholder="请输入症状部位" />
+			</view>
+			<view class="form-item">
+				<label>严重程度</label>
+				<input name="severity" type="number" placeholder="请输入严重程度(1-10)" />
+			</view>
+			<view class="form-item">
+				<label>皮肤照片上传</label>
+				<button bindtap="chooseImage">选择照片</button>
+				<image wx:if="{{imagePath}}" src="{{imagePath}}" mode="aspectFit"></image>
+			</view>
+			<view class="form-item">
+				<label>备注</label>
+				<textarea name="remarks" placeholder="请输入备注"></textarea>
+			</view>
+			<view class="form-item">
+				<button formType="submit">提交</button>
+			</view>
+		</form>
+	</view>
+	<view wx:if="{{consult}}" class="consult">
+		<text style="text-align: center;font-weight: bold;">健康咨询问诊</text>
+		<view class="form-item" style="width: 100%;">
+				<view class="form-item-hd">选择医生</view>
+				<view class="form-item-bd">
+					<picker mode="selector" value="{{genderIndex}}" range="{{genderArray}}" bindchange="changeGender">
+						<block wx:if="{{gender == ''}}">
+							<view class="input input-placeholder">请选择问诊医生</view>
+							<input type="text" name="gender" value="" class="hidden" maxlength="1" />
+						</block>
+						<block wx:else>
+							<view class="input">{{genderArray[genderIndex]}}</view>
+							<input type="text" name="gender" value="{{genderArray[genderIndex]}}" class="hidden" maxlength="1" />
+						</block>
+					</picker>
+				</view>
+			</view>
+		<view class="form">
+			<textarea placeholder="请在此输入您的健康问题" bindinput="handleInput" value="{{question}}" class="textarea"></textarea>
+			<button bindtap="submitQuestion" class="submit-btn">提交问题</button>
+		</view>
+		<view class="response">
+
+			<text class="response-title">医生回复：</text>
+			<textarea style="border: 2rpx solid red;" class="response-content">{{response}}</textarea>
+		</view>
+	</view>
+	<image src="../img/讨论病情.png" mode="widthFix" style="width: 100%"></image>
+</view>

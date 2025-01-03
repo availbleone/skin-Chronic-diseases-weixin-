@@ -1,0 +1,25 @@
+<!--pages/help/help.wxml-->
+<view class="container">
+帮助中心
+</view>
+<view class="setting">
+<text>数据上传失败？</text>
+</view>
+<view class="setting">
+<text>设备无法正常监测</text>
+</view>
+<view class="setting">
+<text>视频打不开怎么办？</text>
+</view>
+<view class="setting">
+<text>为什么没有同步数据？</text>
+</view>
+<view class="setting">
+<text>忘记密码怎么办？</text>
+</view>
+<view class="setting">
+<text>如何切换账号？</text>
+</view>
+<view class="setting">
+<text>如何绑定手机号码？</text>
+</view>

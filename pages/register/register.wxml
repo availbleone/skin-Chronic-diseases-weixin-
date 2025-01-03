@@ -1,0 +1,38 @@
+<!--pages/register/register.wxml-->
+<view class="container">
+<text id="id1">新用户注册</text>
+</view>
+<view class='nav'>
+    <view class='top'>
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+  </view>
+
+  <!-- 修改界面 -->
+
+  <view class="registerview">
+  <view class="phone">
+   <image class="nameImage" src="/pages/img/phone.png"></image> 
+ <text>手机号码</text>
+  <input type="text" placeholder="请输入手机号码" bindinput="setphone" value="{{phone}}"/>
+  </view>
+  <view class="phone">
+    <image class="nameImage" src="/pages/img/useryuan.png"></image> 
+  <text>用户姓名</text>
+  <input type="text" placeholder="请输入用户真实姓名" bindinput="setuserName" value="{{realName}}"/>
+  </view>
+  <view class="phone">
+    <image class="nameImage" src="/pages/img/age.png"></image> 
+  <text>年龄</text>
+  <input type="text" placeholder="请输入真实年龄" bindinput="setage" value="{{age}}"/>
+  </view>
+  <view class="phone">
+    <image class="nameImage" src="/pages/img/yanzma.png"></image>
+  <text>密码</text>
+  <input type="text" placeholder="请输入密码" bindinput="setcode" value="{{passWord}}"/>
+  </view>
+  </view>
+  <!-- button -->
+  <view class="buttons">
+  <button bindtap="registerdemo">同意并继续</button>
+  </view>

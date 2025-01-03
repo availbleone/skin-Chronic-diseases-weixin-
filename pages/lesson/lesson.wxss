@@ -1,0 +1,89 @@
+/* pages/lesson/lesson.wxss */
+page{
+  height: 300%;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  background-color: cornsilk;
+}
+.danmu{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 20rpx;
+}
+video{
+  width: 100vw;
+}
+input{
+  border: 1rpx  solid #ccc;
+  margin: 20rpx;
+}
+button{
+  background-color: rgb(76, 250, 114);
+}
+
+.btn_danmu{
+display: flex;
+position: relative;
+justify-content: center;
+align-items: center;
+}
+.first{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  height: 60rpx;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 180rpx;
+}
+#subtitle{
+  display: flex;
+  justify-content: center;
+}
+#title{
+  font-size: 20pt;
+  display: flex;
+  position: absolute;
+  top: 0;
+  color: brown;
+}
+.video{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#daily{
+  display: flex;
+}
+#tiper{
+  display: flex;
+  width: 60rpx;
+  left: 0rpx;
+  margin-bottom: 50rpx;
+}
+.knowledge{
+  height: auto;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  top: 100rpx;
+  align-items: center;
+  justify-content: center;
+}
+#onetip{
+  color: rgb(238, 91, 123);
+  font-size: 10pt;
+  border: 5rpx solid rgb(226, 100, 121);
+  border-radius: 15rpx;
+}

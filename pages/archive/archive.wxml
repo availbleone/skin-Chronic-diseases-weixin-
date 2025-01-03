@@ -1,0 +1,70 @@
+<!--pages/archive/archive.wxml-->
+<!--pages/detect/detect.wxml-->
+<view class="container">
+	<view class="v1">
+	<text>用户:</text>
+	<input type="text" value="{{name}}" bindinput="in11"  placeholder="请输入用户名" />
+	</view>
+	<view class="v1">
+	<text>性别:</text>
+	<input type="text" value="{{gender}}" bindinput="in12" placeholder="请选择性别" />
+	</view>
+	<view class="v1">
+	<text>体重(kg):</text>
+	<input type="text" value="{{weight}}" placeholder="请输入体重" bindinput="in1"/>
+	</view>
+	<view class="v1">
+	<text>身高(cm):</text>
+	<input type="text" value="{{height}}" placeholder="请输入身高" bindinput="in2"/>
+	</view>
+	<view class="v2">
+	<text class="t1">体质指数:</text>
+	<text class="index">{{bmi}}</text>
+	<button type="primary" class="generate" bindtap="generate"><text class="t3">生成</text></button>
+	</view>
+	<view class="v1">
+	<text>皮肤湿度(%):</text>
+	<input type="text" value="{{wet}}" bindinput="in13" placeholder="请输入皮肤湿度" />
+	</view>
+	<view class="v1">
+	<text>皮脂分泌量(μ/cm²/h):</text>
+	<input type="text" value="{{fenmi}}" bindinput="in14" placeholder="请输入皮脂分泌量" />
+	</view>
+	<view class="v1">
+	<text>皮质层厚度(μm):</text>
+	<input type="text" value="{{thick}}" bindinput="in15" placeholder="请输入皮质层厚度" />
+	</view>
+	<view class="v1">
+	<text>体温(℃):</text>
+	<input type="text" value="{{temperature}}" bindinput="in3" placeholder="请输入体温" />
+	</view>
+	<view class="v1">
+	<text>血压(mmHg):</text>
+	<input type="text" value="{{pressure}}" bindinput="in4" placeholder="请输入血压" />
+	</view>
+	<view class="v1">
+	<text>血糖(mmol):</text>
+	<input type="text" value="{{sugar}}" bindinput="in5" placeholder="请输入血糖" />
+	</view>
+	<view class="v1">
+	<text>心率(次每分钟):</text>
+	<input type="text" value="{{rate}}" bindinput="in6" placeholder="请输入心率" />
+	</view>
+	<view class="v1">
+	<text>步数:</text>
+	<input type="text" value="{{pace}}" bindinput="in7" placeholder="请输入步数" />
+	</view>
+	<view class="v1">
+	<text>视力:</text>
+	<input type="text" value="{{vision}}" bindinput="in8" placeholder="请输入视力" />
+	</view>
+	<view class="v1">
+	<text>肺活量(ml):</text>
+	<input type="text" value="{{capacity}}" bindinput="in9" placeholder="请输入肺活量" />
+	</view>
+	<view class="v1">
+	<text>记录时间:</text>
+	<input type="text" value="{{record}}" bindinput="in10" placeholder="请输入记录时间" />
+	</view>
+	<button type="primary" bindtap="submit">提交</button>
+</view>

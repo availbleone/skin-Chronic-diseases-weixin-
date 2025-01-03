@@ -1,0 +1,113 @@
+page{
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: beige;
+}
+.container{
+	width: 100%;
+	height: auto;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.title{
+	width: 100%;
+	display: flex;
+	position: relative;
+	top: -185rpx;
+	flex-direction: column;
+	align-items: center;
+}
+.content{
+	display: flex;
+	position: relative;
+	width: 100%;
+	flex-wrap: wrap;
+	top: 0rpx;
+	height: auto;
+}
+image{
+	display: flex;
+	position: relative;
+	width: 300rpx;
+}
+.maincontent{
+
+}
+.height{
+display: flex;
+width: 100%;
+flex-direction: column;
+position: relative;
+align-items: flex-start;
+}
+.weight{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	position: relative;
+	align-items: flex-start;
+	}
+.sugar{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	position: relative;
+	align-items: flex-start;
+	}
+.pressure{
+display: flex;
+width: 100%;
+flex-direction: column;
+position: relative;
+align-items: flex-start;
+}
+.temperature{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	position: relative;
+	align-items: flex-start;
+	}
+	.rate{
+		display: flex;
+		width: 100%;
+	flex-direction: column;
+	position: relative;
+	align-items: flex-start;
+	}
+	.pace{
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		position: relative;
+		align-items: flex-start;
+		}
+.vision{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	position: relative;
+	align-items: flex-start;
+	}
+.capacity{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	position: relative;
+	align-items: flex-start;
+	}
+.btn{
+	display: flex;
+	position: relative;
+	right: 0rpx;
+}
+.t1{
+	font-size: 10pt;
+	display: flex;
+	position: relative;
+	width: 150rpx;
+}

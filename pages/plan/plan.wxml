@@ -1,0 +1,29 @@
+
+<view class="plan">
+	<view class="it1">
+    <text>姓名:</text>
+    <input/>
+    </view>
+    <view class="it1">
+    <text>运动方式:</text>
+    <input/>
+    </view>
+    <view class="it1">
+    <text>运动记录:</text>
+    <input/>
+    </view>
+		<view class="it1">
+    <text>运动时长:</text>
+    <input/>
+    </view>
+		<view class="it1">
+    <text>运动地点:</text>
+    <input/>
+    </view>
+		<view class="it2">
+			<text>备注:</text>
+    <textarea></textarea>
+    <input/>
+    </view>
+		<button type="default" bindtap="submit">提交</button>
+    </view>

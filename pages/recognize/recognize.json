@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "questionaire":"../components/questionaire/questionaire"
+  },
+  "navigationBarTitleText": "体质辨识"
+}

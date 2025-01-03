@@ -1,0 +1,16 @@
+/* pages/help/help.wxss */
+.setting{
+  background-color: beige;
+  margin-top: 10rpx;
+  height: 80rpx;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 20rpx;
+  border: solid rgb(229, 235, 235) 1px;
+  }
+  .container{
+    background-color: beige;
+    height: 5rpx;
+    padding: 50rpx;
+  }

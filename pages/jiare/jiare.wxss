@@ -1,0 +1,205 @@
+/* pages/jiare/jiare.wxss */
+page{
+  background-color: cornsilk;
+}
+
+.neironview{
+  margin-top: 13rpx;
+  background-color: rgb(255, 255, 255);
+  width: 95%;
+  margin-left: 2.5%;
+  border-radius: 25rpx;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+}
+.subtitle{
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+  color: rgb(143, 205, 241);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+.neironview button{
+  font-size: 25rpx;
+  float: inherit;
+  background-color: rgb(107, 197, 233);
+}
+
+.viewneiron1{
+  margin:20rpx;
+  display: flex;
+  overflow: hidden;
+  margin-top: 12rpx;
+}
+.viewneiron1 button{
+  font-size: 30rpx;
+}
+.link{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin-top: 10rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  align-items: center;
+}
+.calendar {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.day {
+  width: 14.28%; /* 一周七天，每天占14.28% */
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+.today {
+  background-color: #ffffe0;
+}
+.selected {
+  background-color: #90ee90;
+}
+.yueJingQk{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 10rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.ronqi{
+  flex-wrap: wrap; /* 允许内容自动换行 */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 10rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.ronqi1{
+  width: calc(33.33% - 20px); /* 一行显示三张图片，每张图片占据1/3宽度，并且有间距 */
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box; 
+}
+.iconview{
+  display: flex;
+  overflow: hidden;
+  margin-top: 12rpx;
+}
+.neironview switch{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(220, 226, 108) !important;
+  
+}
+.switchview{
+  margin-left: 180rpx;
+  zoom:.8;
+}
+
+#mychart-receiveRecord-multi-bar{
+  width: 100%;
+  height: 600px;
+  display: block;
+}
+
+/* 588rpx max 160rpx min */
+.progress-root-container {
+  display: flex;
+  flex-direction: row;
+  width: 710rpx;
+  align-items: center;
+  height: 68rpx;
+}
+
+.text {
+  font-size: 28rpx;
+  color: #333;
+  position: absolute;
+  left: 40rpx;
+  font-weight: 700;
+}
+
+.progress-max {
+  position: absolute;
+  left: 192rpx;
+  height: 24rpx;
+  width: 550rpx;
+  background: #d8d8d8;
+  border-radius: 30rpx;
+  z-index: 10;
+}
+
+.progress-current {
+  position: absolute;
+  left: 192rpx;
+  height: 24rpx;
+  width: 428rpx;
+  background:rgb(240, 161, 214) !important;
+  border-radius: 30rpx;
+  z-index: 20;
+}
+
+.pencent-text {
+  font-size: 28rpx;
+  color:rgb(240, 161, 214) !important;
+  left: 666rpx;
+  position: absolute;
+  z-index: 20;
+}
+
+.slice-button {
+  left: 588rpx;
+  width: 68rpx;
+  height: 68rpx;
+  position: absolute;
+  z-index: 30;
+}
+.process_wrap {
+  position: relative;
+  width: 400rpx;
+  margin-left: 60rpx;
+  margin-top: 60rpx;
+}
+.process_wrap .line {
+  width: 550rpx;
+  height: 2rpx;
+  background: #B5B8C2;
+}
+
+.process_wrap .active_line {
+  position: absolute;
+  top: -4rpx;
+  left: 0;
+  max-width: 600rpx;
+  height: 8rpx;
+  background: linear-gradient(83deg,rgb(240, 161, 214) 0%, rgb(240, 161, 214) 100%);
+}
+
+.process_wrap .spot {
+  position: absolute;
+  top: -20rpx;
+  left: 0;
+  width: 40rpx;
+  height: 40rpx;
+  background: rgb(240, 161, 214);
+  box-shadow: 0px 2px 10px 0px rgba(196, 200, 204, 0.5);
+  border: 2px solid #FFFFFF;
+  border-radius: 100%;
+}
+
+

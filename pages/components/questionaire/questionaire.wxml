@@ -1,0 +1,18 @@
+<!--pages/components/questionaire/questionaire.wxml-->
+<radio-group style="display: flex;flex-direction: column;" bindchange="bandleChange" name="radio">
+				<label>
+					<radio value="1" />没有(根本不)	(1分)
+				</label>
+				<label>
+					<radio value="2" />很少(有一点)	(2分)
+				</label>
+				<label>
+					<radio value="3" />有时(有些)	(3分)
+				</label>
+				<label>
+					<radio value="4" />经常(相当)	(4分)
+				</label>
+				<label>
+					<radio value="5" />总是(非常)	(5分)
+				</label>
+			</radio-group>

@@ -1,0 +1,37 @@
+<!--pages/resetcode/resetcode.wxml-->
+<view class="container">
+重置密码
+</view>
+<view class='nav'>
+    <view class='top'>
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+  </view>
+
+  <!-- 修改界面 -->
+
+  <view class="registerview">
+  <view class="phone">
+   <image class="nameImage" src="/pages/img/phone.png"></image> 
+ <text>手机</text>
+  <input type="text" placeholder="请输入手机号"   bindinput="getPhoneValue" value='{{phone}}'/>
+  </view>
+
+  <view class="phone">
+    <image class="nameImage" src="/pages/img/yanzma.png"></image> 
+  <text>原密码</text>    
+  <input type="text" placeholder="请输入验证码" bindinput='getCodeValue' value='{{passWord1}}'/>
+  </view>
+
+  <view class="phone">
+    <image class="nameImage" src="/pages/img/code1.png"></image> 
+  <text>重置密码</text>
+  <input type="text" placeholder="请输入密码"  bindinput="restCodeValue" value="{{passWord}}"/>
+  </view>
+  </view>
+
+  <!-- button -->
+
+  <view class="buttons">
+  <button bindtap="reset">重置密码</button>
+  </view>

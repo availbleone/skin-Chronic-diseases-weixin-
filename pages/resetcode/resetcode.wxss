@@ -1,0 +1,47 @@
+/* pages/resetcode/resetcode.wxss */
+.container{
+  background-color: rgb(232, 236, 236);
+  height: 10rpx;
+  padding: 70rpx;
+}
+.top{
+  border-radius: 50%;
+  overflow: hidden;
+  width:200rpx;
+  height: 200rpx;
+  position: relative;
+  background: pink;
+  margin: 0 auto;
+  }
+ .phone{
+   border-bottom: solid 1rpx #e9e5e5;
+   margin-top: 50rpx;
+   height: 100rpx;
+ }
+ .registerview{
+   margin-top: 50rpx;
+ }
+ .buttons button{
+  margin-top:50rpx;
+  border-radius: 50rpx;
+  background-color: #fa8dd0;
+  align-items: center;
+  text-align: center;
+  width: max-content;
+ }
+ .nameImage{
+  margin-left: 1px; 
+ width: 36rpx; 
+ height:36rpx
+ }
+ 
+.codeBtn{
+  right: 0;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  color: #bbb;
+  width: 30%;
+  font-size: 26rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}

@@ -1,0 +1,42 @@
+page{
+height: 100%;
+}
+.plan{
+	top: 0rpx;
+  display: flex;
+  position: relative;
+  width: 100%;
+	flex-direction: column;
+	background-color: beige;
+	height: 100%;
+}
+.it1{
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin: 20rpx;
+}
+.it2{
+  display: flex;
+	position: relative;
+	flex-direction: column;
+  width: 100%;
+  margin: 20rpx;
+}
+button{
+	top: 250rpx;
+}
+textarea{
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+input{
+  display: flex;
+  position: relative;
+  flex: 1;
+  border: 4rpx solid rgb(178, 224, 117);
+  border-radius: 20rpx;
+  width: 100%;
+}
